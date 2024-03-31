@@ -30,4 +30,5 @@ Example output:
 
 Compare to STATA output:
 ![Graph](https://github.com/Jingyi-Jia/binscatter/assets/57499338/435ebc0a-ee24-4817-89e0-5c69a4f002a5)
-![Screenshot 2024-03-31 015321](https://github.com/Jingyi-Jia/binscatter/assets/57499338/6a2ff233-8273-4c61-8f51-84071c100bd6)
+![Screenshot 2024-03-31 072903](https://github.com/Jingyi-Jia/binscatter/assets/57499338/86cdd45a-9040-456e-89d1-6fe6870a7936)
+
