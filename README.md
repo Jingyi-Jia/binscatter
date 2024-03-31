@@ -1,14 +1,4 @@
-If you're looking to make a nice binned scatter plot with a regression line and you
-don't need to account for any control variables use
-[seaborn.regplot](https://seaborn.pydata.org/generated/seaborn.regplot.html)! If you're
-looking for a Python analog to Stata's![Screenshot 2024-03-31 074532](https://github.com/Jingyi-Jia/binscatter/assets/57499338/ec038a01-5762-41a9-b1c8-995753501996)
-
-[binscatter](https://michaelstepner.com/binscatter/), read on.
-
-Stata's `binscatter` is described fully by Michael Stepner
-[here](https://michaelstepner.com/binscatter/). You can use this Python version in
-essentially the same way you use Matplotlib functions like `plot` and `scatter`.
-A more extensive description is [here](http://esantorella.com/2017/11/03/binscatter/).
+Based on Elizabeth Santorella's project: https://github.com/esantorella/binscatter?tab=readme-ov-file
 
 ## Getting started
 1. Download the code through git clone or downloading the zip file. For example:
@@ -37,3 +27,7 @@ create_binscatter(df['x'], df['y'], fixed_effects=df['ind']);
 ```
 Example output:
 ![Screenshot 2024-03-31 074532](https://github.com/Jingyi-Jia/binscatter/assets/57499338/64897f49-7baa-4016-8930-71433b242d8c)
+
+Compare to STATA output:
+![Graph](https://github.com/Jingyi-Jia/binscatter/assets/57499338/435ebc0a-ee24-4817-89e0-5c69a4f002a5)
+![Screenshot 2024-03-31 015321](https://github.com/Jingyi-Jia/binscatter/assets/57499338/6a2ff233-8273-4c61-8f51-84071c100bd6)
