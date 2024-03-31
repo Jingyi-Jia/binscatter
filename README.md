@@ -10,7 +10,7 @@ essentially the same way you use Matplotlib functions like `plot` and `scatter`.
 A more extensive description is [here](http://esantorella.com/2017/11/03/binscatter/).
 
 ## Getting started
-1. Download the code through git clone or downloading the zip file. Example:
+1. Download the code through git clone or downloading the zip file. For example:
 ```
 git clone git@github.com:Jingyi-Jia/binscatter.git
 ```
