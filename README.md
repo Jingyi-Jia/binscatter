@@ -10,47 +10,27 @@ essentially the same way you use Matplotlib functions like `plot` and `scatter`.
 A more extensive description is [here](http://esantorella.com/2017/11/03/binscatter/).
 
 ## Getting started
-
-1. _Copy and paste_: Binscatter's meaningful code consists of consists of just one file.
-You can copy `binscatter/binscatter.py` into the directory the rest of your code is in.
-If you are missing dependencies, you may first need to install them. One way of doing
-that is with `pip install -r requirements.txt`.
-
-2. _Install `binscatter` via pip_: To make it easier to use `binscatter` in multiple
-projects and directories, open a terminal and
-   - git clone https://github.com/esantorella/binscatter.git
-   - cd binscatter
-   - pip install .
-
+1. Download the code through git clone or downloading the zip file. Example:
+```
+git clone git@github.com:Jingyi-Jia/binscatter.git
+```
+2. Set up the module
+```
+cd binscatter
+pip install -r requirements.txt
+pip install .
+```
 ## Usage
 
 ```
-import binscatter
 import pandas as pd
 import numpy as np
-from matplotlib import pyplot as plt
+df = pd.read_csv('extensive_fake_data.csv')
 
-# Create fake data
-n_obs = 1000
-data = pd.DataFrame({"experience": np.random.poisson(4, n_obs) + 1})
-data["Tenure"] = data["experience"] + np.random.normal(0, 1, n_obs)
-data["Wage"] = data["experience"] + data["Tenure"] + np.random.normal(0, 1, n_obs)
-fig, axes = plt.subplots(2, sharex=True, sharey=True)
+from binscatter.binscatter import create_binscatter
+# Binscatter plot
+create_binscatter(df['x'], df['y']);
 
-# Binned scatter plot of Wage vs Tenure
-axes[0].binscatter(data["Tenure"], data["Wage"])
-
-# Binned scatter plot that partials out the effect of experience
-axes[1].binscatter(
-    data["Tenure"],
-    data["Wage"],
-    controls=data["experience"],
-    recenter_x=True,
-    recenter_y=True,
-)
-axes[1].set_xlabel("Tenure (residualized, recentered)")
-axes[1].set_ylabel("Wage (residualized, recentered)")
-
-plt.tight_layout()
-plt.show()
+# Binscatter plot with fixed effects
+create_binscatter(df['x'], df['y'], fixed_effects=df['ind']);
 ```

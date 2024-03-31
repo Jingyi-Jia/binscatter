@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: binscatter
+Version: 1.0.0
+Summary: binned scatter plots with or without covariates
+Home-page: https://github.com/esantorella/binscatter
+Author: Elizabeth Santorella
+License: MIT
+Platform: 

@@ -1,0 +1,11 @@
+README.md
+setup.py
+binscatter/__init__.py
+binscatter/binscatter.py
+binscatter.egg-info/PKG-INFO
+binscatter.egg-info/SOURCES.txt
+binscatter.egg-info/dependency_links.txt
+binscatter.egg-info/not-zip-safe
+binscatter.egg-info/requires.txt
+binscatter.egg-info/top_level.txt
+tests/test_all.py

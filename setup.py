@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     packages=["binscatter"],
-    install_requires=["pandas", "numpy", "matplotlib", "sklearn", "scipy"],
+    install_requires=["pandas", "numpy", "matplotlib", "scikit-learn", "scipy"],
     zip_safe=False,
     entry_points={},
     name="binscatter",
